@@ -32,6 +32,11 @@ nav ul li {
 .nav-link {
     text-decoration: none;
     color: #eff6ee;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
 }
 
 .nav-icon {
