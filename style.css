@@ -5,9 +5,10 @@
     font-weight: 400;
 }
 
-body {
+body, html {
     background-color: #eff6ee;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 nav {
@@ -17,6 +18,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     padding: 1.25rem;
+    margin-bottom: 3rem;
 }
 
 nav ul {
@@ -45,6 +47,7 @@ nav ul li {
 
 main {
     width: 80%;
+    max-width: 1366px;
     margin: 1rem auto;
     font-weight: 300;
 }
@@ -55,11 +58,21 @@ main {
 
 .title-name {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #2b2b2b;
 }
 
 .sub-title {
     font-weight: 300;
     font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .title-name {
+        font-size: 1.75rem;
+    }
+    
+    .sub-title {
+        font-size: 1rem;
+    }
 }
