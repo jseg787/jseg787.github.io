@@ -3,6 +3,7 @@
     padding: 0;
     font-size: 100%;
     font-weight: 400;
+    box-sizing: border-box;
 }
 
 body, html {
@@ -65,6 +66,28 @@ main {
 .sub-title {
     font-weight: 300;
     font-size: 1.25rem;
+}
+
+h2 {
+    background-color: #f02d3a;
+    /* color: ; */
+    border-radius: 10px 10px 0 0;
+    color: #eff6ee;
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding: .5rem;
+}
+
+.about {
+    margin-top: 1.2rem;
+}
+
+.about-text {
+    font-weight: 300;
+    color: #2b2b2b;
+    font-size: .9rem;
+    line-height: 150%;
+    padding: 0 .2rem;
 }
 
 @media only screen and (max-width: 600px) {
