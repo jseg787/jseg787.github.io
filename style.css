@@ -1,3 +1,9 @@
+:root {
+    --color-light: #eff6ee;
+    --color-dark: #2b2d42;
+    --color-red: #f02d3a;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +13,14 @@
 }
 
 body, html {
-    background-color: #eff6ee;
+    background-color: var(--color-light);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
 
 nav {
-    background-color: #2b2d42;
-    color: #eff6ee;
+    background-color: var(--color-dark);
+    color: var(--color-light);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,7 +40,7 @@ nav ul li {
 
 .nav-link {
     text-decoration: none;
-    color: #eff6ee;
+    color: var(--color-light);
     font-weight: 500;
 }
 
@@ -60,19 +66,19 @@ main {
 .title-name {
     font-weight: 700;
     font-size: 2.5rem;
-    color: #2b2b2b;
+    color: var(--color-dark);
 }
 
 .sub-title {
     font-weight: 300;
     font-size: 1.25rem;
+    color: var(--color-dark)
 }
 
 h2 {
-    background-color: #f02d3a;
-    /* color: ; */
+    background-color: var(--color-red);
     border-radius: 10px 10px 0 0;
-    color: #eff6ee;
+    color: var(--color-light);
     font-weight: 400;
     font-size: 1.25rem;
     padding: .5rem;
@@ -84,7 +90,7 @@ h2 {
 
 .about-text {
     font-weight: 300;
-    color: #2b2b2b;
+    color: var(--color-dark);
     font-size: .9rem;
     line-height: 150%;
     padding: 0 .2rem;
