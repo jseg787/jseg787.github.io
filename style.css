@@ -134,8 +134,7 @@ main {
 	transform: scale(1.1);
 }
 
-.logos > div {
-	text-align: center;
+.logos > figure {
 	margin: .4rem;
 }
 
