@@ -139,13 +139,11 @@ main {
 	margin: .4rem;
 }
 
-.logos p {
-	font-weight: 300;
-	font-size: .7rem;
-}
-
 .logo-text {
 	opacity: 0;
+	font-weight: 300;
+	font-size: .7rem;
+	text-align: center;
 }
 
 .logo:hover + .logo-text {
