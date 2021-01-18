@@ -8,7 +8,7 @@
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
-	font-weight: 400;
+	font-weight: 300;
 	box-sizing: border-box;
 }
 
@@ -158,12 +158,33 @@ main {
 	align-self: center;
 }
 
+#projects .section-text {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.project {
+	margin-bottom: 1.2rem;
+}
+
 .project-title {
 	font-weight: 700;
+	margin-bottom: 1rem;
 }
 
 .fa {
 	color: var(--color-dark);
+}
+
+.contact-icons {
+	display: flex;
+	justify-content: center;
+}
+
+.contact-icons a {
+	font-size: 5rem;
+	display: block;
+	margin:  0 1rem;
 }
 
 @media only screen and (max-width: 600px) {
