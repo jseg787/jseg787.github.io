@@ -61,7 +61,6 @@ nav {
 	width: 0;
 	height: 3px;
 	background-color: var(--color-light);
-	/* opacity: .5; */
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -69,7 +68,6 @@ nav {
 }
 
 .nav-link:hover::after {
-	/* text-decoration: underline; */
 	width: 100%;
 }
 
