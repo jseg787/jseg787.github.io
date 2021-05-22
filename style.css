@@ -39,7 +39,6 @@ nav {
 	padding: .5rem;
 	margin: .6rem;
 	flex-grow: 1;
-	flex-shrink: 1;
 }
 
 .nav-links {
@@ -54,10 +53,24 @@ nav {
 	color: var(--color-light);
 	padding: .5rem;
 	margin: .6rem;
+	position: relative;
 }
 
-.nav-link:hover {
-	text-decoration: underline;
+.nav-link::after {
+	content: "";
+	width: 0;
+	height: 3px;
+	background-color: var(--color-light);
+	/* opacity: .5; */
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transition: width .3s ease-out;
+}
+
+.nav-link:hover::after {
+	/* text-decoration: underline; */
+	width: 100%;
 }
 
 .nav-icon a {
