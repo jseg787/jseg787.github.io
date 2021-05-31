@@ -21,6 +21,8 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* Header and Navigation */
+
 header {
 	background-color: var(--color-dark);
 }
@@ -80,6 +82,8 @@ nav {
 	text-decoration: none;
 }
 
+/* Content */
+
 main {
 	width: 90%;
 	max-width: 1200px;
@@ -101,6 +105,8 @@ main {
 	font-weight: 300;
 	font-size: 1.25rem;
 }
+
+/* sections */
 
 .section {
 	margin: 4rem 0;
@@ -133,23 +139,21 @@ main {
 
 .logos {
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .logo {
+	margin: .4rem;
+}
+
+.logo img {
 	max-width: 70px;
 	width: 100%;
 	transition: transform .15s linear;
-	justify-self: center;
-	align-self: center;
 }
 
-.logo:hover {
+.logo:hover img {
 	transform: scale(1.1);
-}
-
-.logos > figure {
-	margin: .4rem;
 }
 
 .logo-text {
@@ -157,9 +161,10 @@ main {
 	font-weight: 300;
 	font-size: .7rem;
 	text-align: center;
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-.logo:hover + .logo-text {
+.logo:hover .logo-text {
 	opacity: 1;
 	transition: opacity .1s linear;
 }
