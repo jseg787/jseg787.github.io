@@ -66,8 +66,8 @@ nav {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	transform-origin: left;
 	transition: transform .3s ease-out;
-	transform-origin: right;
 }
 
 .nav-link:hover::after {
