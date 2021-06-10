@@ -57,6 +57,7 @@ nav {
 	padding: .5rem;
 	margin: .6rem;
 	position: relative;
+	transition: opacity .2s linear;
 }
 
 .nav-link::after {
@@ -74,6 +75,10 @@ nav {
 
 .nav-link:hover::after {
 	transform: scaleX(1);
+}
+
+nav:hover .nav-link:not(:hover) {
+	opacity: .3;
 }
 
 .nav-icon a {
