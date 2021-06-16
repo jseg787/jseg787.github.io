@@ -144,17 +144,22 @@ main {
 
 .logos {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .logo {
 	margin: .4rem;
+	display: flex;
+	flex-direction: column;
+	/* background-color: royalblue; */
 }
 
 .logo img {
 	max-width: 70px;
 	width: 100%;
 	transition: transform .15s linear;
+	flex-grow: 1;
+	/* background-color: red; */
 }
 
 .logo:hover img {
@@ -166,6 +171,7 @@ main {
 	font-weight: 300;
 	font-size: .7rem;
 	text-align: center;
+	padding-top: .3rem;
 }
 
 .logo:hover .logo-text {
